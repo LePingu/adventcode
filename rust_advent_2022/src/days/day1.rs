@@ -44,6 +44,5 @@ pub fn read_file() -> Result<(), Box<dyn std::error::Error>> {
         elves[0], elves[1], elves[2]
     );
     println!("Total:{}", elves[0] + elves[1] + elves[2]);
-    println!("Vector:{:?}", elves);
     Ok(())
 }
