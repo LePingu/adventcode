@@ -3,7 +3,7 @@ mod days;
 fn main() {
     // days::day1::read_file().unwrap();
     // days::day2::solve_rock_paper_scissors().unwrap();
-    days::day3::get_elf_team_badge().unwrap();
+    days::day4::get_overlap().unwrap();
 }
 
 // #[tokio::main]
