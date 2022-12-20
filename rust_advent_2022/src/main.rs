@@ -3,7 +3,8 @@ mod days;
 fn main() {
     // days::day1::read_file().unwrap();
     // days::day2::solve_rock_paper_scissors().unwrap();
-    days::day4::get_overlap().unwrap();
+    let test = days::day6::get_marker(14);
+    println!("{}", test);
 }
 
 // #[tokio::main]

@@ -3,7 +3,7 @@ use std::io::prelude::*;
 use std::io::BufReader;
 
 pub fn read_file() -> Result<(), Box<dyn std::error::Error>> {
-    let file = File::open("/workspaces/adventcode/rust_advent_2022/src/days/test.txt")?;
+    let file = File::open("/workspaces/adventcode/rust_advent_2022/test_inputs/day1.txt")?;
     let reader = BufReader::new(file);
     let mut first: i32 = 0;
     let mut second: i32 = 0;

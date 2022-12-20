@@ -34,7 +34,7 @@ fn init_scoring_board_winner() -> std::collections::HashMap<&'static str, i32> {
 
 pub fn solve_rock_paper_scissors() -> Result<i32, Box<dyn std::error::Error>> {
     let score_board = init_scoring_board_winner();
-    let file = File::open("/workspaces/adventcode/rust_advent_2022/src/days/day2_test.tx")?;
+    let file = File::open("/workspaces/adventcode/rust_advent_2022/test_inputs/day2.txt")?;
     let reader = BufReader::new(file);
     let mut total = 0;
 

@@ -59,7 +59,7 @@ fn calculate_item(item: u8) -> i32 {
 }
 
 pub fn get_rucksacks_common() -> Result<(), Box<dyn std::error::Error>> {
-    let file = File::open("/workspaces/adventcode/rust_advent_2022/src/days/day3.txt")?;
+    let file = File::open("/workspaces/adventcode/rust_advent_2022/test_inputs/day3.txt")?;
     let reader = BufReader::new(file);
     let mut counter: i32 = 0;
     for line in reader.lines() {
@@ -72,8 +72,9 @@ pub fn get_rucksacks_common() -> Result<(), Box<dyn std::error::Error>> {
 
 // Trying a new method for part2
 // I want to test intersection.
+// TODO: Is there a way to read in chunks ?
 pub fn get_elf_team_badge() -> Result<(), Box<dyn std::error::Error>> {
-    let file = File::open("/workspaces/adventcode/rust_advent_2022/src/days/day3.txt")?;
+    let file = File::open("/workspaces/adventcode/rust_advent_2022/test_inputs/day3.txt")?;
     let mut reader = BufReader::new(file);
     let mut buf = String::new();
     reader
